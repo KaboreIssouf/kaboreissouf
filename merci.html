@@ -87,12 +87,18 @@
 </head>
 
 <body>
-    <h1>Merci pour votre achat</h1>
+    <h1 id="message">---</h1>
 
     <!-- Bouton pour retourner dans Zulu -->
-    <a href="https://player-login.unity.com/fr/redirect?redirect_uri=aHR0cHM6Ly9wbGF5ZXItbG9naW4udW5pdHkuY29tL3YxL29hdXRoMi9hdXRoP2NsaWVudF9pZD04MmQ1YzI4Mi1hNDc4LTQzN2ItYTZlNy0yZDMyMDBlMjNhMGUmcmVkaXJlY3RfdXJpPXVuaXR5ZGwlM0ElMkYlMkZjb20udW5pdHlwbGF5ZXJhY2NvdW50cy42NmEzMjVhMC00ZWViLTRjMDAtYTRiYy02MDc5NzI5MDliNmMmcmVzcG9uc2VfbW9kZT1xdWVyeSZyZXNwb25zZV90eXBlPWNvZGUmc2Vzc2lvbl9pZD1hZWM0NmJjYy04NGJjLTQ3MDctODc5NC00NTY5NjZjYjhkYzcmc3RhdGU9ODg4MjYxNjEtNDMyZS00ZjAxLWI5MDEtODk3Y2QwZGM3ZDhi"
+    <a style="display: none;" id="returnButton" href="https://player-login.unity.com/fr/redirect?redirect_uri=aHR0cHM6Ly9wbGF5ZXItbG9naW4udW5pdHkuY29tL3YxL29hdXRoMi9hdXRoP2NsaWVudF9pZD04MmQ1YzI4Mi1hNDc4LTQzN2ItYTZlNy0yZDMyMDBlMjNhMGUmcmVkaXJlY3RfdXJpPXVuaXR5ZGwlM0ElMkYlMkZjb20udW5pdHlwbGF5ZXJhY2NvdW50cy42NmEzMjVhMC00ZWViLTRjMDAtYTRiYy02MDc5NzI5MDliNmMmcmVzcG9uc2VfbW9kZT1xdWVyeSZyZXNwb25zZV90eXBlPWNvZGUmc2Vzc2lvbl9pZD1hZWM0NmJjYy04NGJjLTQ3MDctODc5NC00NTY5NjZjYjhkYzcmc3RhdGU9ODg4MjYxNjEtNDMyZS00ZjAxLWI5MDEtODk3Y2QwZGM3ZDhi"
         class="btn">Retourner dans Zulu</a>
 
+
+
+    <!-- Spinner -->
+    <div id="spinner" style="margin-top: 20px;">
+        <img src="spinner.gif" alt="Chargement..." width="50" height="50">
+    </div>
 
     <script>
         function processUrlFromCurrentPage() {
@@ -104,12 +110,12 @@
 
             // Récupérer la seconde partie qui contient l'URL à reformater
             if (parts.length > 1) {
-                let partialUrl = parts[1]; // La partie après le premier ?
+                let queryParams = parts[1]; // La partie après le premier ?
 
                 // Ajouter https:// et retirer le premier ?
-                partialUrl = "https://" + partialUrl;
+                let partialUrl = "https://" + queryParams;
 
-                // Effectuer la requête GET
+                // Effectuer la requête GET avec fetch
                 fetch(partialUrl)
                     .then(response => {
                         if (!response.ok) {
@@ -119,9 +125,37 @@
                     })
                     .then(data => {
                         console.log('Données récupérées:', data);
+
+                        // Extraire le paramètre responsecode
+                        const urlParams = new URLSearchParams(queryParams);
+                        const responseCode = urlParams.get('responsecode');
+
+                        // Modifier le message affiché en fonction du responsecode
+                        const messageElement = document.getElementById('message');
+
+                        if (responseCode === '0') {
+                            messageElement.textContent = 'Merci pour votre achat';
+                        } else if (responseCode === '-1') {
+                            messageElement.textContent = 'Oups, votre achat a échoué';
+                        } else {
+                            messageElement.textContent = 'Statut de transaction inconnu';
+                        }
+
+                        // Cacher le spinner après 3 secondes et afficher le bouton
+                        setTimeout(() => {
+                            document.getElementById('spinner').style.display = 'none';
+                            document.getElementById('returnButton').style.display = 'block';
+                        }, 3000);
                     })
                     .catch(error => {
                         console.error('Erreur:', error);
+                        document.getElementById('message').textContent = "Erreur de traitement";
+
+                        // Cacher le spinner et montrer le bouton dans ce cas
+                        setTimeout(() => {
+                            document.getElementById('spinner').style.display = 'none';
+                            document.getElementById('returnButton').style.display = 'block';
+                        }, 3000);
                     });
             } else {
                 console.log('Aucune URL à traiter');
@@ -131,6 +165,7 @@
         // Appeler la fonction pour traiter l'URL de la page
         processUrlFromCurrentPage();
     </script>
+
 </body>
 
 </html>
