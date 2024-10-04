@@ -93,6 +93,44 @@
     <a href="https://player-login.unity.com/fr/redirect?redirect_uri=aHR0cHM6Ly9wbGF5ZXItbG9naW4udW5pdHkuY29tL3YxL29hdXRoMi9hdXRoP2NsaWVudF9pZD04MmQ1YzI4Mi1hNDc4LTQzN2ItYTZlNy0yZDMyMDBlMjNhMGUmcmVkaXJlY3RfdXJpPXVuaXR5ZGwlM0ElMkYlMkZjb20udW5pdHlwbGF5ZXJhY2NvdW50cy42NmEzMjVhMC00ZWViLTRjMDAtYTRiYy02MDc5NzI5MDliNmMmcmVzcG9uc2VfbW9kZT1xdWVyeSZyZXNwb25zZV90eXBlPWNvZGUmc2Vzc2lvbl9pZD1hZWM0NmJjYy04NGJjLTQ3MDctODc5NC00NTY5NjZjYjhkYzcmc3RhdGU9ODg4MjYxNjEtNDMyZS00ZjAxLWI5MDEtODk3Y2QwZGM3ZDhi"
         class="btn">Retourner dans Zulu</a>
 
+
+    <script>
+        function processUrlFromCurrentPage() {
+            // Récupérer l'URL de la page actuelle
+            const fullUrl = window.location.href;
+
+            // Diviser l'URL en deux parties à partir du premier ?
+            const parts = fullUrl.split('?');
+
+            // Récupérer la seconde partie qui contient l'URL à reformater
+            if (parts.length > 1) {
+                let partialUrl = parts[1]; // La partie après le premier ?
+
+                // Ajouter https:// et retirer le premier ?
+                partialUrl = "https://" + partialUrl;
+
+                // Effectuer la requête GET
+                fetch(partialUrl)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Erreur lors de la requête');
+                        }
+                        return response.json(); // ou response.text() selon le format attendu
+                    })
+                    .then(data => {
+                        console.log('Données récupérées:', data);
+                    })
+                    .catch(error => {
+                        console.error('Erreur:', error);
+                    });
+            } else {
+                console.log('Aucune URL à traiter');
+            }
+        }
+
+        // Appeler la fonction pour traiter l'URL de la page
+        processUrlFromCurrentPage();
+    </script>
 </body>
 
 </html>
