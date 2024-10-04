@@ -87,7 +87,7 @@
 </head>
 
 <body>
-    <h1 id="message">---</h1>
+    <h1 style="display: none;" id="message"></h1>
 
     <!-- Bouton pour retourner dans Zulu -->
     <a style="display: none;" id="returnButton" href="https://player-login.unity.com/fr/redirect?redirect_uri=aHR0cHM6Ly9wbGF5ZXItbG9naW4udW5pdHkuY29tL3YxL29hdXRoMi9hdXRoP2NsaWVudF9pZD04MmQ1YzI4Mi1hNDc4LTQzN2ItYTZlNy0yZDMyMDBlMjNhMGUmcmVkaXJlY3RfdXJpPXVuaXR5ZGwlM0ElMkYlMkZjb20udW5pdHlwbGF5ZXJhY2NvdW50cy42NmEzMjVhMC00ZWViLTRjMDAtYTRiYy02MDc5NzI5MDliNmMmcmVzcG9uc2VfbW9kZT1xdWVyeSZyZXNwb25zZV90eXBlPWNvZGUmc2Vzc2lvbl9pZD1hZWM0NmJjYy04NGJjLTQ3MDctODc5NC00NTY5NjZjYjhkYzcmc3RhdGU9ODg4MjYxNjEtNDMyZS00ZjAxLWI5MDEtODk3Y2QwZGM3ZDhi"
@@ -161,6 +161,9 @@
                         }, 3000);
                     });
             } else {
+                document.getElementById('spinner').style.display = 'none';
+                document.getElementById('returnButton').style.display = 'none';
+                document.getElementById('error').style.display = 'none';
                 console.log('Aucune URL à traiter');
             }
         }
