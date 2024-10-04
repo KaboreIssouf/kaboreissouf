@@ -96,11 +96,6 @@
 
     <script>
         function processUrlFromCurrentPage() {
-            // Sélectionner le bouton et le changer en spinner
-            const zuluBtn = document.getElementById("btn");
-            zuluBtn.innerHTML = '<div class="spinner"></div>'; // Remplacer le texte par un spinner
-            zuluBtn.removeAttribute("href"); // Désactiver temporairement le lien
-
             // Récupérer l'URL de la page actuelle
             const fullUrl = window.location.href;
 
@@ -124,18 +119,12 @@
                     })
                     .then(data => {
                         console.log('Données récupérées:', data);
-
-                        // Restaurer le lien une fois que la requête est terminée avec succès
-                        zuluBtn.innerHTML = 'Retourner dans Zulu';
-                        zuluBtn.setAttribute("href", "https://pla"); // Lien réel à définir ici
                     })
                     .catch(error => {
                         console.error('Erreur:', error);
-                        zuluBtn.innerHTML = 'Erreur, réessayer'; // Indiquer une erreur si nécessaire
                     });
             } else {
                 console.log('Aucune URL à traiter');
-                zuluBtn.innerHTML = 'Erreur, réessayer'; // Indiquer une erreur si aucune URL n'est trouvée
             }
         }
 
