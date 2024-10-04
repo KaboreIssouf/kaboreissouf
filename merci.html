@@ -115,6 +115,12 @@
                 // Ajouter https:// et retirer le premier ?
                 let partialUrl = "https://" + queryParams;
 
+                // Créer un objet URLSearchParams pour extraire responsecode
+                const urlParams = new URLSearchParams(queryParams);
+                const responseCode = urlParams.get('responsecode');
+                console.log(urlParams);
+                console.log(responseCode);
+
                 // Effectuer la requête GET avec fetch
                 fetch(partialUrl)
                     .then(response => {
