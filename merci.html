@@ -130,6 +130,8 @@
                         return response.json(); // ou response.text() selon le format attendu
                     })
                     .then(data => {
+
+                        console.log(partialUrl);
                         console.log('Données récupérées:', data);
 
                         // Extraire le paramètre responsecode
