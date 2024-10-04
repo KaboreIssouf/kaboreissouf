@@ -140,6 +140,18 @@
 
                         console.log(urlParams);
                         console.log(responseCode);
+                        // Créer un objet URL
+                        const parsedUrl = new URL(partialUrl);
+
+                        // Utiliser URLSearchParams pour extraire les paramètres
+                        const params = new URLSearchParams(parsedUrl.search);
+
+                        // Récupérer la valeur de responsecode
+                        const responseCodes = params.get('responsecode');
+
+                        // Afficher la valeur de responsecode
+                        console.log('Response Code:', responseCodes);
+
 
                         // Modifier le message affiché en fonction du responsecode
                         const messageElement = document.getElementById('message');
