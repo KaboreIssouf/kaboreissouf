@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merci pour votre achat</title>
+    <style>
+        /* Styles globaux */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            /* Couleur de fond sombre */
+            color: #FFFFFF;
+            /* Couleur du texte blanche */
+            font-family: 'Arial', sans-serif;
+        }
+        
+        h1 {
+            font-size: 4vw;
+            /* Taille du texte adaptative */
+            text-align: center;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            /* S'assurer que le texte ne dépasse pas l'écran */
+        }
+        /* Styles pour le bouton */
+        
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #FFF;
+            background-color: #1DB954;
+            /* Couleur verte du bouton */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            /* Retirer les soulignements */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #17a846;
+            /* Couleur du bouton au survol */
+        }
+        /* Media query pour petits écrans (smartphones) */
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 6vw;
+                /* Agrandir le texte sur les petits écrans */
+                padding: 15px;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+        /* Media query pour les très grands écrans (desktops) */
+        
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 2rem;
+                /* Taille de texte plus précise sur grands écrans */
+                padding: 30px;
+            }
+            .btn {
+                font-size: 1.5rem;
+                padding: 20px 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Merci pour votre achat</h1>
+
+    <!-- Bouton pour retourner dans Zulu -->
+    <a href="https://player-login.unity.com/fr/redirect?redirect_uri=aHR0cHM6Ly9wbGF5ZXItbG9naW4udW5pdHkuY29tL3YxL29hdXRoMi9hdXRoP2NsaWVudF9pZD04MmQ1YzI4Mi1hNDc4LTQzN2ItYTZlNy0yZDMyMDBlMjNhMGUmcmVkaXJlY3RfdXJpPXVuaXR5ZGwlM0ElMkYlMkZjb20udW5pdHlwbGF5ZXJhY2NvdW50cy42NmEzMjVhMC00ZWViLTRjMDAtYTRiYy02MDc5NzI5MDliNmMmcmVzcG9uc2VfbW9kZT1xdWVyeSZyZXNwb25zZV90eXBlPWNvZGUmc2Vzc2lvbl9pZD1hZWM0NmJjYy04NGJjLTQ3MDctODc5NC00NTY5NjZjYjhkYzcmc3RhdGU9ODg4MjYxNjEtNDMyZS00ZjAxLWI5MDEtODk3Y2QwZGM3ZDhi"
+        class="btn">Retourner dans Zulu</a>
+
+</body>
+
+</html>
