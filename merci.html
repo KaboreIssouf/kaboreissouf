@@ -111,15 +111,9 @@
             // Récupérer la seconde partie qui contient l'URL à reformater
             if (parts.length > 1) {
                 let queryParams = parts[1]; // La partie après le premier ?
-
+                console.log(queryParams);
                 // Ajouter https:// et retirer le premier ?
                 let partialUrl = "https://" + queryParams;
-
-                // Créer un objet URLSearchParams pour extraire responsecode
-                const urlParams = new URLSearchParams(queryParams);
-                const responseCode = urlParams.get('responsecode');
-                console.log(urlParams);
-                console.log(responseCode);
 
                 // Effectuer la requête GET avec fetch
                 fetch(partialUrl)
@@ -130,27 +124,8 @@
                         return response.json(); // ou response.text() selon le format attendu
                     })
                     .then(data => {
-
-                        console.log(partialUrl);
                         console.log('Données récupérées:', data);
 
-                        // Extraire le paramètre responsecode
-                        const urlParams = new URLSearchParams(queryParams);
-                        const responseCode = urlParams.get('responsecode');
-
-                        console.log(urlParams);
-                        console.log(responseCode);
-                        // Créer un objet URL
-                        const parsedUrl = new URL(partialUrl);
-
-                        // Utiliser URLSearchParams pour extraire les paramètres
-                        const params = new URLSearchParams(parsedUrl.search);
-
-                        // Récupérer la valeur de responsecode
-                        const responseCodes = params.get('responsecode');
-
-                        // Afficher la valeur de responsecode
-                        console.log('Response Code:', responseCodes);
 
 
                         // Modifier le message affiché en fonction du responsecode
