@@ -143,11 +143,14 @@
                         } else {
                             messageElement.textContent = 'Statut de transaction inconnu';
                         }
+                        console.log(responseCode);
+
 
                         // Cacher le spinner après 3 secondes et afficher le bouton
                         setTimeout(() => {
                             document.getElementById('spinner').style.display = 'none';
                             document.getElementById('returnButton').style.display = 'block';
+                            document.getElementById('message').style.display = 'block';
                         }, 3000);
                     })
                     .catch(error => {
@@ -158,6 +161,7 @@
                         setTimeout(() => {
                             document.getElementById('spinner').style.display = 'none';
                             document.getElementById('returnButton').style.display = 'block';
+                            document.getElementById('message').style.display = 'block';
                         }, 3000);
                     });
             } else {
