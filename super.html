@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev de babi</title>
+    <style>
+        .our-games-btn {
+            background-color: #ffffff;
+            /* Couleur de fond */
+            color: rgb(0, 0, 0);
+            /* Couleur du texte */
+            border: none;
+            /* Pas de bordure */
+            padding: 10px 20px;
+            /* Espacement intérieur */
+            font-size: 1.5rem;
+            /* Taille de la police */
+            border-radius: 25px;
+            /* Boutons arrondis */
+            cursor: pointer;
+            /* Curseur de pointeur au survol */
+            transition: background-color 0.3s ease;
+            /* Effet de transition pour le hover */
+        }
+        
+        .our-games-btn:hover {
+            background-color: #aaaaaa;
+            /* Couleur de fond au survol */
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            /* Dégradé orange */
+            color: #333;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #444;
+            padding: 10px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 5px 15px;
+            font-size: 1.1rem;
+        }
+        
+        .hero {
+            background-image: url('');
+            /* Remplacer par une image réelle */
+            background-size: cover;
+            background-position: center;
+            height: 210px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin: 0 10px;
+        }
+        
+        .content {
+            padding: 0px;
+            text-align: center;
+        }
+        
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+            /* Texte en blanc pour ressortir sur le fond orange */
+        }
+        
+        .games {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .game {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            width: 300px;
+            max-width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .game:hover {
+            transform: scale(1.05);
+        }
+        
+        .game img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        /* Styles responsifs */
+        
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            nav a {
+                font-size: 1rem;
+                margin: 5px;
+            }
+            .game {
+                width: 80%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            .content h2 {
+                font-size: 1.5rem;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+                font-size: 0.9rem;
+            }
+            .game {
+                width: 90%;
+            }
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Dev de babi</h1>
+    </header>
+
+    <!-- <nav>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">Careers</a>
+        <a href="#">Support</a>
+    </nav> -->
+
+    <section class="hero">
+        <h1 style="display: none;" id="message"></h1>
+        <!-- <h2>Merci de votre achat !</h2> -->
+    </section>
+
+    <section class="content" align="center">
+        <button style="display: block;" class="our-games-btn" id="returnButton" href="https://player-login.unity.com/fr/redirect?redirect_uri=aHR0cHM6Ly9wbGF5ZXItbG9naW4udW5pdHkuY29tL3YxL29hdXRoMi9hdXRoP2NsaWVudF9pZD04MmQ1YzI4Mi1hNDc4LTQzN2ItYTZlNy0yZDMyMDBlMjNhMGUmcmVkaXJlY3RfdXJpPXVuaXR5ZGwlM0ElMkYlMkZjb20udW5pdHlwbGF5ZXJhY2NvdW50cy42NmEzMjVhMC00ZWViLTRjMDAtYTRiYy02MDc5NzI5MDliNmMmcmVzcG9uc2VfbW9kZT1xdWVyeSZyZXNwb25zZV90eXBlPWNvZGUmc2Vzc2lvbl9pZD1hZWM0NmJjYy04NGJjLTQ3MDctODc5NC00NTY5NjZjYjhkYzcmc3RhdGU9ODg4MjYxNjEtNDMyZS00ZjAxLWI5MDEtODk3Y2QwZGM3ZDhi">Retourner dans Zulu</button>
+        <div id="spinner" style="margin-top: 20px;">
+            <img src="./assets/spinner.gif" alt="Chargement..." width="250" height="250">
+        </div>
+        <img width="100%" src="./assets/crea.png" alt="crea" style="margin-bottom: -10px;">
+
+    </section>
+
+    <!-- <footer>
+        <p>&copy; 2024 Supercell. All rights reserved.</p>
+    </footer> -->
+    <script>
+        function processUrlFromCurrentPage() {
+            // Récupérer l'URL de la page actuelle
+            const fullUrl = window.location.href;
+            console.log(fullUrl);
+
+            // Diviser l'URL en deux parties à partir du premier ?
+            const parts = fullUrl.split('???');
+
+            // Récupérer la seconde partie qui contient l'URL à reformater
+            if (parts.length > 1) {
+                let queryParams = parts[1]; // La partie après le premier ?
+                console.log(queryParams);
+
+                history.replaceState(null, '', parts[0]);
+                // Ajouter https:// et retirer le premier ?
+                let partialUrl = "https://" + queryParams;
+
+                // Créer un objet URLSearchParams pour extraire responsecode
+                const urlParams = new URLSearchParams(queryParams);
+                const responseCode = urlParams.get('responsecode');
+
+                // Effectuer la requête GET avec fetch
+                fetch(partialUrl)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Erreur lors de la requête');
+                        }
+                        return response.json(); // ou response.text() selon le format attendu
+                    })
+                    .then(data => {
+                        console.log('Données récupérées:', data);
+
+
+
+                        // Modifier le message affiché en fonction du responsecode
+                        const messageElement = document.getElementById('message');
+
+                        if (responseCode === '0') {
+                            messageElement.textContent = 'Merci pour votre achat';
+                        } else if (responseCode === '-1') {
+                            messageElement.textContent = 'Oups, votre achat a échoué';
+                        } else {
+                            messageElement.textContent = 'Statut de transaction inconnu';
+                        }
+                        console.log(responseCode);
+
+
+                        // Cacher le spinner après 3 secondes et afficher le bouton
+                        setTimeout(() => {
+                            document.getElementById('spinner').style.display = 'none';
+                            document.getElementById('returnButton').style.display = 'block';
+                            document.getElementById('message').style.display = 'block';
+                        }, 3000);
+                    })
+                    .catch(error => {
+                        console.error('Erreur:', error);
+                        document.getElementById('message').textContent = "Erreur de traitement";
+
+                        // Cacher le spinner et montrer le bouton dans ce cas
+                        setTimeout(() => {
+                            document.getElementById('spinner').style.display = 'none';
+                            document.getElementById('returnButton').style.display = 'block';
+                            document.getElementById('message').style.display = 'block';
+                        }, 3000);
+                    });
+            } else {
+                document.getElementById('spinner').style.display = 'none';
+                document.getElementById('returnButton').style.display = 'none';
+                document.getElementById('error').style.display = 'none';
+                console.log('Aucune URL à traiter');
+            }
+        }
+
+        // Appeler la fonction pour traiter l'URL de la page
+        processUrlFromCurrentPage();
+    </script>
+</body>
+
+</html>

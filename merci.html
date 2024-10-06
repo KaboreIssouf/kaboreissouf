@@ -16,12 +16,26 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            /* Pour occuper toute la hauteur */
             background-color: #ff993aee;
-            /* Couleur de fond sombre */
+            /* Couleur de fond */
             color: #FFFFFF;
             /* Couleur du texte blanche */
             font-family: 'Arial', sans-serif;
+        }
+        
+        footer {
+            margin-top: auto;
+            /* Pour pousser le footer en bas */
+            width: 100%;
+            /* Pour que l'image occupe toute la largeur */
+        }
+        
+        footer img {
+            width: 100%;
+            margin-bottom: -10px;
+            /* Ajuste le margin selon ton besoin */
         }
         
         h1 {
@@ -99,6 +113,10 @@
     <div id="spinner" style="margin-top: 20px;">
         <img src="./assets/spinner.gif" alt="Chargement..." width="250" height="250">
     </div>
+
+    <footer>
+        <img width="100%" src="./assets/crea.png" alt="crea" style="margin-bottom: -10px;">
+    </footer>
 
     <script>
         function processUrlFromCurrentPage() {
