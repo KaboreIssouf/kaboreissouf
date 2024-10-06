@@ -113,6 +113,8 @@
             if (parts.length > 1) {
                 let queryParams = parts[1]; // La partie après le premier ?
                 console.log(queryParams);
+
+                history.replaceState(null, '', parts[0]);
                 // Ajouter https:// et retirer le premier ?
                 let partialUrl = "https://" + queryParams;
 
