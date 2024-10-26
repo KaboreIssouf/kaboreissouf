@@ -3,697 +3,1198 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-
-
-    <section id="about">
-
-        <!-- <div class="section__pic-container" align="center">
-            <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-        </div> -->
-        <div class="section__text">
-            <img src="./assets/profile-pic.png" width="30%" alt="John Doe profile picture" />
-        </div>
-        <br>
-        <div class="section__text">
-
-            <h1 class="title">Kaboré Issouf Wk.</h1>
-            <p class="section__text__p2">Développeur :) </p>
-            <div class="btn-container">
-
-         <!--  <a class="btn btn-color-2" href="merci.html">
-          test
-          </a>-->
-                
-                <button class="btn btn-color-2" onclick="window.open('./assets/cv Kabore Issouf wk.pdf')">
-            Mon CV
-          </button>
-                <button class="btn btn-color-1" onclick="location.href='https://www.linkedin.com/in/issouf-kabor%C3%A9-3814a4191?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEvZCq9o5REWPoZ0fccUtOg%3D%3D'">
-                    LinkedIn
-          </button>
+    <main>
+        <header id="header">
+            <div class="overlay overlay-lg">
+                <img src="./img/shapes/square.png" class="shape square" alt="" />
+                <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+                <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="" />
+                <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="" />
+                <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+                <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
+                <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
+                <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
+                <img src="./img/shapes/letters.png" class="letters" alt="" />
+                <img src="./img/shapes/points1.png" class="points points1" alt="" />
             </div>
 
-        </div>
-        <br><br> <br><br>
-
-
-        <div class="about-details-container">
-            <h1 class="title">Parcours scolaire </h1>
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="./assets/school.png" alt="Experience icon" class="icon" />
-                    <h3>Baccalauréat</h3>
-                    <p>Serie A2 : Littérature<br /></p>
-                </div>
-                <div class="details-container">
-                    <img src="./assets/school.png" alt="Education icon" class="icon" />
-                    <h3>BTS </h3>
-                    <p>Comptabilité et Gestion des entreprises<br /></p>
-                </div>
-                <div class="details-container">
-                    <img src="./assets/school.png" alt="Education icon" class="icon" />
-                    <h3>Licence </h3>
-                    <p>Communication Digitale<br /></p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" /> -->
-
-        <!-- <p class="section__text__p1">Explore My</p> -->
-        <h1 class="title">Expériences</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Développement Web et Mobile</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Moyen</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Moyen</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Angular</h3>
-                                <p>Moyen</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Moyen</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Ionic</h3>
-                                <p>Moyen</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Développement de jeux et design</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Unity3D </h3>
-                                <p>Intermediaire</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Blender</h3>
-                                <p>Débutant</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Adobe</h3>
-                                <p>Débutant</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Débutant</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Office</h3>
-                                <p>Moyen</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" /> -->
-
-
-        <h1 class="title">Mes projets de jeux</h1>
-        <p class="section__text__p1">Bonne visite !</p>
-        <br>
-        <div class="about-details-container">
-
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/reference ivoirienne ok.webp" alt="Project 1" class="project-img" />
-                    </div> <br>
-                    <!-- <h3>g</h3> -->
-                    <p>Fan de devinettes ? alors ce jeu typiquement ivoirien est fait pour toi.</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://web.gara.store/apps/game/143'">
-                            Lien Gara
-                          </button> <button class="btn btn-color-2 project-btn" onclick="location.href='https://devdebabi.itch.io/ref-ivoire'">
-                           Démo
-                          </button>
-
-                    </div>
-                </div>
-
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/gnamagnama ok.webp" alt="Project 2" class="project-img" />
-                    </div> <br>
-                    <!-- <h3>g</h3> -->
-                    <p>L'insalubrité, ça vous parle ? alors venez ramasser les ordures !</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://web.gara.store/apps/game/148'">
-                            Lien Gara
-                          </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/search?q=gnama%20gnama&c=apps&hl=fr&gl=US'">
-                            Lien Playstore
-                          </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://lordlelouch.itch.io/test-gnama'">
-                           Démo
-                          </button>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="about-details-container">
-
-            <div class="about-containers">
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/ivoire run ok.webp" alt="Project 3" class="project-img" />
-                    </div> <br>
-                    <!-- <h3>g</h3> -->
-                    <p>Découvrez le plaisir d'un endless runner façon ivoirien !</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://web.gara.store/apps/game/146'">
-                            Lien Gara
-                          </button>
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/ziguehi ok.webp" alt="Project 3" class="project-img" />
-                    </div> <br>
-                    <p>Venez "Gbachi" comme on aime le dire en Cote d'Ivoire. </p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://web.gara.store/apps/game/144'">
-                            Lien Gara
-                          </button>
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="about-details-container">
-
-            <div class="about-containers">
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/totem rush ok.webp" alt="Project 3" class="project-img" />
-                    </div> <br>
-                    <!-- <h3>g</h3> -->
-                    <p>Si vous avez un œil de lynx, n'hésitez pas à venir casser les totems en prenant soin des couleurs !</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2-custom project-btn">
-                            Lien Gara
-                          </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devdebabi.itch.io/totems-rush'">
-                           Démo web
-                          </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devdebabi.itch.io/totem-rush-apk'">
-                            Démo apk
-                           </button>
-
-                    </div>
-                </div>
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/finger totem ok.webp" alt="Project 3" class="project-img" />
-                    </div> <br>
-                    <p>Vos réflexes sont remarquables, alors venez éviter les obstacles. </p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn">
-                            Lien
-                          </button> <button class="btn btn-color-2 project-btn" onclick="location.href='https://lordlelouch.itch.io/finger-totem'">
-                           Démo
-                          </button>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="about-details-container">
-
-            <div class="about-containers">
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/babifoot ok.webp" alt="Project 3" class="project-img" />
-                    </div> <br>
-                    <!-- <h3>g</h3> -->
-                    <p>Passionné de séances de tirs au but ? Alors, venez mettre à l'épreuve notre gardien ! </p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://web.gara.store/apps/game/703'">
-                            Lien Gara
-                          </button>
-
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devdebabi.itch.io/babifoot-web'">
-                           Démo web
-                          </button>
-
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devdebabi.itch.io/babifootbeta'">
-                            Démo apk
-                           </button>
-                    </div>
-                </div>
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/Wotro jet ok.webp" alt="Project 3" class="project-img" />
-                    </div> <br>
-                    <p>
-                        Êtes-vous prêt à essayer une version avant-gardiste du "wotro" ? Si oui, pourquoi ne pas vous lancer ! </p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2-custom project-btn">
-                            Lien
-                          </button> <button class="btn btn-color-2-custom project-btn">
-                           Démo
-                          </button>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="about-details-container">
-
-            <div class="about-containers">
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/soudé le héros ok.webp" alt="Project 3" class="project-img" />
-                    </div>
-                    <!-- <h3>g</h3> -->
-                    <br>
-                    <p>
-                        Un jeune altruiste doté d'un pilon divin ! Êtes-vous prêt à plonger dans son histoire captivante ?</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://web.gara.store/apps/game/775'">
-                            Lien Gara
-                          </button>
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/Survival-Alliance ok.webp" alt="Project 3" class="project-img" />
-                    </div>
-                    <br>
-                    <p>
-                        Défendez-vous contre une horde de monstres en multijoueur, avec des héros atypiques ! </p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2-custom project-btn">
-                            Lien
-                          </button> <button class="btn btn-color-2-custom project-btn">
-                           Démo
-                          </button>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <h1 class="title">Applications </h1>
-        <!-- <p class="section__text__p1">Applications</p> -->
-        <br>
-        <div class="about-details-container">
-
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/infraction ci.webp" alt="Project 1" class="project-img" />
-                    </div> <br>
-                    <!-- <h3>g</h3> -->
-                    <p>Une appli pour consulter les infractions routières en Côte d'Ivoire, avec amendes et infos sur le code de la route.</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.DevDeBabi.InfractionsCI&hl=fr&gl=US'">
-                            Lien playstore
-                          </button>
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/itroc.webp" alt="Project 2" class="project-img" />
-                    </div> <br>
-                    <!-- <h3>g</h3> -->
-                    <p>
-                        Une appli e-commerce pour une expérience shopping d'occasions simplifiée. </p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.DevDeBabi.ITroc&hl=fr&gl=US'">
-                            Lien playstore
-                          </button>
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <h1 class="title">Game Jam </h1>
-        <!-- <p class="section__text__p1">Applications</p> -->
-        <br>
-        <div class="about-details-container">
-
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/gamejam/gamejam1.jpg" alt="Project 1" class="project-img" />
-                    </div> <br>
-                    <h3>IFCI et Goethe-Institut</h3>
-                    <p>Une Game Jam qui s'articulait autour de trois thèmes : la diversité et l'inclusion, le climat et l'environnement, le patrimoine. Avec le thème de la diversité et de l'inclusion, nous avons proposé un jeu multijoueur coopératif. Dans
-                        ce jeu, vous et votre coéquipier devez survivre le plus longtemps en éliminant des monstres. Le jeu offre plusieurs personnages jouables issus de diverses cultures. Le nom de notre jeu : Survival Alliance."</p>
-                    <br>
-                    <div class="btn-container">
-                        <!--  <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.DevDeBabi.InfractionsCI&hl=fr&gl=US'">
-                            Lien playstore
-                          </button>
-                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/gamejam/gamejam2.png" alt="Project 2" class="project-img" />
-                    </div> <br>
-                    <h3>the Gamathon organisé par Africacomicade</h3>
-                    <p>
-                        J'AI EU LA CHANCE DE PARTICIPER À UNE GAME JAM ORGANISÉE AU NIGERIA. CETTE GAME JAM AVAIT POUR THÈME : HERO AFRICAIN. NOUS AVONS RÉALISÉ UN JEU LEQUEL NOUS INCARNONS UN HÉROS NOMMÉ SOUDÉ, QUI AVEC SON PILON MAGIQUE (UNE RÉCOMPENSE DES DIEUX) DOIT FRANCHIR
-                        DE NOMBREUX OBSTACLES AFIN D'AIDER SA COMMUNAUTÉ. </p>
-                    <br>
-                    <div class="btn-container">
-                        <!--   <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.DevDeBabi.ITroc&hl=fr&gl=US'">
-                            Lien playstore
-                          </button>
-                       <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="about-details-container">
-
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/gamejam/metathon.png" alt="Project 1" class="project-img" />
-                    </div> <br>
-                    <h3>AR/VR Metathon 2022</h3>
-                    <p>Dans ce métathon, nous avons repris notre projet EduKids en y intégrant une composante de réalité augmentée (AR). Cette intégration permet aux enfants de visualiser divers objets, animaux, etc., en réalité augmentée, tout en effectuant
-                        des exercices.</p>
-                    <br>
-                    <div class="btn-container">
-                        <!--  <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.DevDeBabi.InfractionsCI&hl=fr&gl=US'">
-                            Lien playstore
-                          </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/gamejam/hackathon gmc.png" alt="Project 2" class="project-img" />
-                    </div> <br>
-                    <h3>Upside education, l'hackathon de GOMYCODE (novembre, 2022)</h3>
-                    <p>
-                        L'hackathon se concentre sur l'impact que vous pouvez créer. Vous avez le pouvoir d'apporter des changements, de résoudre des problèmes en suspens et d'améliorer la vie des apprenants et des éducateurs. Dans cette optique, nous avons proposé une application
-                        éducative : EduKids. Cette application offre aux enfants un accès à des contenus éducatifs à la demande, tels que des cours vidéo, des quiz, des exercices, etc.</p>
-                    <br>
-                    <div class="btn-container">
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.DevDeBabi.ITroc&hl=fr&gl=US'">
-                            Lien playstore
-                          </button>
-                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="about-details-container">
-
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/gamejam/gaemjam2019.jpg" alt="Project 1" class="project-img" />
-                    </div> <br>
-                    <h3>Game Jam Feja 2019</h3>
-                    <p>Avec pour thème la paix, nous avons créé un jeu multijoueur coopératif où nous incarnons deux enfants dans un village. L'objectif du jeu est de promouvoir l'entraide en résolvant des énigmes en duo, afin de découvrir les secrets enfouis
-                        du village.</p>
-                    <br>
-                    <div class="btn-container">
-                        <!--  <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.DevDeBabi.InfractionsCI&hl=fr&gl=US'">
-                            Lien playstore
-                          </button>
-                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                           Démo
-                          </button> -->
-
-                    </div>
-                </div>
-
-
-                <div class="details-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/flappy-coco.webp" alt="Project 1" class="project-img" />
-                    </div> <br>
-                    <!-- <h3>the Gamathon organisé par Africacomicade</h3> -->
-                    <p>Un prototype réalisé lors d'un atelier d'initiation au développement de jeux au Goethe-Institut.</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2-custom project-btn">
-                            Lien Gara
-                          </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devdebabi.itch.io/flappy-coco'">
-                           Démo web
-                          </button>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-issouf color-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu//reference ivoirienne ok.png" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Référence Ivoirienne</h2>
-               <p>Fan de devinettes ? alors ce jeu typiquement ivoirien est fait pour toi.</p> 
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Link
-                  </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Test
-                  </button>
-                    </div>
-                    <br>
-                </div>
-                <div class="details-issouf color-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/gnamagnama ok.png" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Gnama Gnama</h2>
-                    <p>L'insalubrité, ça vous parle ? alors venez ramasser les ordures !</p> 
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Github
-                  </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Live Demo
-                  </button>
-                    </div>
-                    <br>
-                </div>
-                <div class="details-issouf color-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/ivoire run ok.png" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Ivoire Run</h2>
-                    <p>Découvrez le plaisir d'un endless runner façon ivoirien !</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Github
-                  </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Live Demo
-                  </button>
-                    </div>
-                    <br>
-                </div>
-                <div class="details-issouf color-container">
-                    <div class="article-container">
-                        <img src="./assets/jeu/ziguehi ok.png" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">ziguehi</h2>
-                    <p>Venez "Gbachi" comme on aime le dire en Cote d'Ivoire. </p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Github
-                  </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Live Demo
-                  </button>
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div> -->
-        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" /> -->
-
-        <section id="contact">
-            <p class="section__text__p1">Faisons connaissance !</p>
-            <h1 class="title"></h1>
-            <div class="contact-info-upper-container">
-                <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                    <p><a href="mailto:kaboreissouf.wk@gmail.com">kaboreissouf.wk@gmail.com</a></p>
-                </div>
-                <div class="contact-info-container">
-                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                    <p><a href="https://www.linkedin.com/in/issouf-kabor%C3%A9-3814a4191?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEvZCq9o5REWPoZ0fccUtOg%3D%3D">LinkedIn</a></p>
-                </div>
-            </div>
             <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-                        <a>N'hésitez pas à me contacter :) </a>
-                    </ul>
+                <div class="container">
+                    <div class="logo">
+                        <img src="./img/kLogo.png" alt="" />
+                    </div>
+
+                    <div class="links" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="#header">Home</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#testimonials">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#hireme" class="active">Hire me</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hamburger-menu" style="display: none;">
+                        <div class="bar"></div>
+                    </div>
                 </div>
             </nav>
-        </section>
-    </section>
 
+            <div class="header-content">
+                <div class="container grid-2">
+                    <div class="column-1">
+                        <h1 class="header-title">Issouf Kaboré Wk.</h1>
+                        <p class="text">Un passionné de développement de jeux et d'applications mobiles.
+                        </p>
+                        <a class="btn" onclick="window.open('./assets/cv Kabore Issouf wk.pdf')">Mon CV</a>
+                    </div>
 
-
-    <!-- <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <a>N'hésitez pas à me contacter :) </a>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                    <div class="column-2 image">
+                        <img src="./img/shapes/points2.png" class="points points2" alt="" />
+                        <img src="./img/abdout.png" class="img-element z-index" alt="" />
+                    </div>
+                </div>
             </div>
-        </nav>
-       <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p> 
-    </footer> -->
-    <script src="script.js"></script>
+        </header>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Ce que je fais">Services</h3>
+                    <p class="text">
+                        Les domaines dans lesquels j’ai un peu d’expérience… (ง'̀-'́)ง
+                    </p>
+                </div>
+
+                <div class="cards">
+                    <div class="card-wrap">
+                        <img src="./img/shapes/points3.png" class="points points1 points-sq" alt="" />
+                        <div class="card" data-card="UI/UX">
+                            <div class="card-content z-index">
+                                <img src="./img/design-icon.png" class="icon" alt="" />
+                                <h3 class="title-sm">Développement de Jeux</h3>
+                                <p class="text">
+                                    Je donne vie à vos idées de jeux en concevant des expériences interactives captivantes pour mobile, web et PC, alliant qualité, innovation et immersion.
+                                </p>
+                                <a class="btn small">Unity</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrap">
+                        <div class="card" data-card="Code">
+                            <div class="card-content z-index">
+                                <img src="./img/code-icon.png" class="icon" alt="" />
+                                <h3 class="title-sm">Développement Web</h3>
+                                <p class="text">
+                                    Avec Angular... Bah, j'aime pas trop le web, Désolé.
+                                </p>
+                                <p class="text">
+                                    (╥﹏╥)
+                                </p>
+                                <a class="btn small">Angular</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrap">
+                        <img src="./img/shapes/points3.png" class="points points2 points-sq" alt="" />
+                        <div class="card" data-card="App">
+                            <div class="card-content z-index">
+                                <img src="./img/app-icon.png" class="icon" alt="" />
+                                <h3 class="title-sm">Développement Mobile</h3>
+                                <p class="text">
+                                    Je conçois des applications mobiles pour Android et iOS, adaptées aux besoins spécifiques de chaque projet.
+                                </p>
+                                <a class="btn small">Ionic / Flutter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="background-bg">
+                <div class="overlay overlay-sm">
+                    <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="" />
+                    <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="" />
+                    <img src="./img/shapes/square.png" class="shape square" alt="" />
+                    <img src="./img/shapes/wave.png" class="shape wave" alt="" />
+                    <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+                    <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
+                    <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Mes travaux :)">Portfolio</h3>
+                </div>
+
+                <div class="section-body">
+                    <div class="filter">
+                        <button class="filter-btn active" data-filter="*">Tout ಠ_ಠ</button>
+                        <button class="filter-btn" data-filter=".game">Jeux</button>
+                        <button class="filter-btn" data-filter=".app">App</button>
+                        <button class="filter-btn" data-filter=".event">Event</button>
+                        <button class="filter-btn" data-filter=".other">Autres</button>
+                        <!-- <button class="filter-btn" data-filter=".logo-design">
+                Logo Design
+              </button> -->
+                    </div>
+
+                    <div class="grid">
+                        <!-- <div class="grid-item appdev ui">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port8.png" alt="" />
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>App Development</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+
+
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/zulubattle.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2024</h5>
+                                            <h5 class="blog-user">Mon projet actuel</h5>
+                                        </div>
+                                        <h3 class="title-sm">Zulu Battle</h3>
+                                        <p class="blog-text">
+                                            Entrez dans l'arène de Zulu Battle, un jeu de stratégie au tour par tour où chaque décision peut changer le destin de la bataille.
+                                        </p>
+                                        <!-- <a class="btn small">Mon projet actuel</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/Callofdozo.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2023</h5>
+                                            <h5 class="blog-user">(En cours...)</h5>
+                                        </div>
+                                        <h3 class="title-sm">Call Of Dozo</h3>
+                                        <p class="blog-text">
+                                            Jeu multijoueur de tir à la troisième personne, se déroulant dans un univers africain.
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/ivoirerun.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2022</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Ivoire Run</h3>
+                                        <p class="blog-text">
+                                            Un jeu de type endless runner mettant en scène des personnages amusants et colorés.
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/gnamagnama.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2022</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Gnama Gnama</h3>
+                                        <p class="blog-text">
+                                            Jeu casual dans lequel vous devez ramasser des ordures avec votre tricycle. Attention aux accidents !
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/refivoire.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2022</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Référence Ivoirienne</h3>
+                                        <p class="blog-text">
+                                            Devinez l'expression ivoirienne cachée derrière des images !
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/ziguehi.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2022</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Ziguehi</h3>
+                                        <p class="blog-text">
+                                            Un jeu décontracté où vous devez lancer l'alter le plus haut possible !
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/babifoot.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2023</h5>
+                                            <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5>
+                                        </div>
+                                        <h3 class="title-sm">Babi</h3>
+                                        <p class="blog-text">
+                                            Lorem ipsum, dolor sit amet elit. rem poimus? Tempora expedita eos autem! Lorem ipsum, dolor sit met.
+                                        </p>
+                                        <a href="#" class="btn small">ZZZZZ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/wotrojet.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2023</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Wotro-Jet</h3>
+                                        <p class="blog-text">
+                                            Avec votre "Wotro" avant-gardiste, ramassez les bagages !
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/fingerTotem.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2024</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Finger Totem</h3>
+                                        <p class="blog-text">
+                                            Jeu casual mettant à l'épreuve vos réflexes. Évitez les masques !
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/totemrush.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2024</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Totem Rush</h3>
+                                        <p class="blog-text">
+                                            Jeu casual mettant à l'épreuve vos réflexes. Empilez les cubes de la même couleur !
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/soudé.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2024</h5>
+                                            <h5 class="blog-user"><i class="fas fa-user"></i>(Collab)</h5>
+                                        </div>
+                                        <h3 class="title-sm">Soudé le hero</h3>
+                                        <p class="blog-text">
+                                            L'aventure d'un jeune béni des dieux avec son pilon magique, qui doit affronter des défis incroyables
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/survivalalliance.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2023</h5>
+                                            <h5 class="blog-user"><i class="fas fa-user"></i>(Game Jam)</h5>
+                                        </div>
+                                        <h3 class="title-sm">Survival Alliance</h3>
+                                        <p class="blog-text">
+                                            Défendez-vous contre une horde de monstres en multijoueur, avec des héros atypiques !
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="grid-item game">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/jeux/DeliverIt.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2023</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>(Game Jam)</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">DeliverIt</h3>
+                                        <p class="blog-text">
+                                            Un jeu casual dans lequel vous devez livrer un colis !
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="grid-item app">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/app/itroc.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2022</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">I-Troc</h3>
+                                        <p class="blog-text">
+                                            Une appli e-commerce pour une expérience shopping d'occasions simplifiée.
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item app">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/app/infraction ci.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2023</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Infractions CI</h3>
+                                        <p class="blog-text">
+                                            Une appli pour consulter les infractions routières en Côte d'Ivoire, avec amendes et infos sur le code de la route.
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item event">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/event/gaemjam2019.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2019</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Game Jam Feja 2019</h3>
+                                        <p class="blog-text">
+                                            Avec pour thème la paix, nous avons créé un jeu multijoueur coopératif où nous incarnons deux enfants dans un village. L'objectif du jeu est de promouvoir l'entraide en résolvant des énigmes en duo, afin de découvrir les secrets enfouis du village.
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item event">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/event/gamejam1.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2023</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">IFCI et Goethe-Institut</h3>
+                                        <p class="blog-text">
+                                            Une Game Jam qui s'articulait autour de trois thèmes : la diversité et l'inclusion, le climat et l'environnement, le patrimoine. Avec le thème de la diversité et de l'inclusion, nous avons proposé un jeu multijoueur coopératif. Dans ce jeu, vous et votre
+                                            coéquipier devez survivre le plus longtemps en éliminant des monstres. Le jeu offre plusieurs personnages jouables issus de diverses cultures. Le nom de notre jeu : Survival Alliance."
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item event">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/event/gamejam2.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">XXXX</h5>
+                                            <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5>
+                                        </div>
+                                        <h3 class="title-sm">the Gamathon by Africacomicade</h3>
+                                        <p class="blog-text">
+                                            J'AI EU LA CHANCE DE PARTICIPER À UNE GAME JAM ORGANISÉE AU NIGERIA. CETTE GAME JAM AVAIT POUR THÈME : HERO AFRICAIN. NOUS AVONS RÉALISÉ UN JEU LEQUEL NOUS INCARNONS UN HÉROS NOMMÉ SOUDÉ, QUI AVEC SON PILON MAGIQUE (UNE RÉCOMPENSE DES DIEUX) DOIT FRANCHIR
+                                            DE NOMBREUX OBSTACLES AFIN D'AIDER SA COMMUNAUTÉ.
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item event">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/event/hackathon gmc.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2022</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">GOMYCODE hackathon</h3>
+                                        <p class="blog-text">
+                                            Upside education, l'hackathon de GOMYCODE. L'hackathon se concentre sur l'impact que vous pouvez créer. Vous avez le pouvoir d'apporter des changements, de résoudre des problèmes en suspens et d'améliorer la vie des apprenants et des éducateurs. Dans
+                                            cette optique, nous avons proposé une application éducative : EduKids. Cette application offre aux enfants un accès à des contenus éducatifs à la demande, tels que des cours vidéo, des quiz, des exercices, etc.
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item event">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/event/metathon.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2022</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">AR/VR Metathon </h3>
+                                        <p class="blog-text">
+                                            Dans ce métathon, nous avons repris notre projet EduKids en y intégrant une composante de réalité augmentée (AR). Cette intégration permet aux enfants de visualiser divers objets, animaux, etc., en réalité augmentée, tout en effectuant des exercices.
+                                        </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item event">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/event/flappycoco.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2023</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Atelier Goethe-Institut</h3>
+                                        <p class="blog-text">
+                                            Flappy Coco, un prototype que j'ai créé en tant qu'animateur lors d'un atelier d'initiation au développement de jeux au Goethe-Institut. </p>
+                                        <!-- <a href="#" class="btn small">ZZZZZ</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-item app">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="./img/app/innov.png" alt="" />
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">2024</h5>
+                                            <!-- <h5 class="blog-user">Application d'apprentissage</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">Application d'apprentissage</h3>
+                                        <p class="blog-text">
+                                            Une application d'apprentissage destinée aux classes de CP1, CP2, CE1, CE2, CM1 et CM2, regroupant diverses matières telles que le français, l'histoire, les mathématiques, l'éducation civique et morale, la géographie et les sciences. Cette application
+                                            regorge de nombreux contenus, notamment des leçons, des exercices intégrés et des exercices d'application. Elle propose également une lecture vocale des leçons, un suivi de lecture et des instructions vocales...
+
+                                        </p>
+                                        <a style="background-color: red;" class="btn small"> Pas moins de 28 applications distinctes (par matière et par classe).</a>
+                                        <!-- <a class="btn small">Mon projet actuel</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item other">
+                            <div class="blog-wrap">
+                                <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                                <div class="blog-card">
+
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <h5 class="blog-date">confidentiels</h5>
+                                            <!-- <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5> -->
+                                        </div>
+                                        <h3 class="title-sm">PROJETS</h3>
+                                        <p class="blog-text">
+                                            J'ai d'autres projets passionnants, mais qui sont confidentiels."
+                                        </p>
+
+                                        <a style="background-color: red;" class="btn small">(｡•́︿•̀｡)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="more-folio">
+                        <a class="btn">(￣︶￣*)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="OwO">A propos de moi</h3>
+                </div>
+
+                <div class="section-body grid-2">
+                    <div class="column-1">
+                        <h3 class="title-sm">Moi... UwU</h3>
+                        <p class="text">
+                            Étudiant en communication avec un amour profond pour la programmation et le développement, je me spécialise dans l'exploration des technologies innovantes et la résolution créative de problèmes. Mon parcours allie curiosité, polyvalence et soif d'apprendre,
+                            me permettant de naviguer aisément entre les mondes de la communication et du code.
+                        </p>
+
+                        <p class="text">
+                            Que vous ayez un projet en tête ou que vous recherchiez une collaboration, je suis toujours prêt à échanger et à relever de nouveaux défis. Si vous recherchez un profil dynamique, enthousiaste et adaptable, n'hésitez pas à me contacter !
+                        </p>
+
+                        <br>
+                        <h3 class="title-sm">Mes skills...</h3>
+                        <div class="skills">
+                            <div class="skill html">
+                                <h3 class="skill-title">UNITY <a style="color: red; font-size: xx-small;">Je préfère ne rien dire ow...</a></h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70%"></div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="skill html">
+                                <h3 class="skill-title">HTML et CSS <a style="color: red; font-size: xx-small;">C'est plus difficile que PHP :)</a></h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill css">
+                                <h3 class="skill-title">IONIC <a style="color: red; font-size: xx-small;">Haaa il soutra (aide) de ouf ! </a> </h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill js">
+                                <h3 class="skill-title">FLUTTER <a style="color: red; font-size: xx-small;">La jauge va bientôt augmenter... ou pas ! MDR  </a></h3>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="40%"></div>
+                                </div>
+                            </div>
+                            <div class="skill js">
+                                <h3 class="skill-title">ANGULAR <a style="color: red; font-size: xx-small;">Caractère difficile !</a> </h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="40%"></div>
+                                </div>
+                            </div>
+                            <div class="skill js">
+                                <h3 class="skill-title">TYPESCRIPT <a style="color: red; font-size: xx-small;">TypeScript, chic type (oui le jeu de mot)</a></h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="60%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill html">
+                                <h3 class="skill-title">BACKEND (Firebase, Supabase, PlayFab...) <a style="color: red; font-size: xx-small;">Heu... ça compte aussi non ?!</a></h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill html">
+                                <h3 class="skill-title">FIGMA / PHOTOSHOP <a style="color: red; font-size: xx-small;">Humm ça là....(</a></h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="50%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill html">
+                                <h3 class="skill-title">OFFICE <a style="color: red; font-size: xx-small;">Qui maitrise Excel ? Qui ?</a></h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill html">
+                                <h3 class="skill-title">BLEND (3D) <a style="color: red; font-size: xx-small;">Je sais pas faire l'homme dès !</a></h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn">y'a chatGPT alors pourquoi s'en faire :)</a>
+                    </div>
+
+                    <!-- <div class="column-2 image">
+                        <img src="./img/shapes/points4.png" class="points" alt="" />
+                        <img src="./img/about.png" class="z-index" alt="" />
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="records">
+            <div class="overlay overlay-sm">
+                <img src="./img/shapes/square.png" alt="" class="shape square1" />
+                <img src="./img/shapes/square.png" alt="" class="shape square2" />
+                <img src="./img/shapes/circle.png" alt="" class="shape circle" />
+                <img src="./img/shapes/half-circle.png" alt="" class="shape half-circle" />
+                <img src="./img/shapes/wave.png" alt="" class="shape wave wave1" />
+                <img src="./img/shapes/wave.png" alt="" class="shape wave wave2" />
+                <img src="./img/shapes/x.png" alt="" class="shape xshape" />
+                <img src="./img/shapes/triangle.png" alt="" class="shape triangle" />
+            </div>
+
+            <div class="container">
+
+
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <!-- <div class="blog-info">
+                            <h5 class="blog-date">2017</h5>
+                            <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5>
+                        </div> -->
+                        <h3 class="title-sm">Baccalauréat</h3>
+                        <p class="blog-text">
+                            Serie A2 : Littérature
+                        </p>
+                        <a class="btn small">(ツ)</a>
+                    </div>
+
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <!-- <div class="blog-info">
+                            <h5 class="blog-date">2017</h5>
+                            <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5>
+                        </div> -->
+                        <h3 class="title-sm">BTS</h3>
+                        <p class="blog-text">
+                            Comptabilité et Gestion
+                        </p>
+                        <a class="btn small">(⚆_⚆)</a>
+                    </div>
+
+                </div>
+
+
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <!-- <div class="blog-info">
+                            <h5 class="blog-date">2017</h5>
+                            <h5 class="blog-user"><i class="fas fa-user"></i>YYY</h5>
+                        </div> -->
+                        <h3 class="title-sm">Licence</h3>
+                        <p class="blog-text">
+                            Communication Digitale
+                        </p>
+                        <a class="btn small">(¬_¬ )</a>
+                    </div>
+
+                </div>
+
+                <!-- <div class="wrap">
+                    <div class="record-circle active">
+                        <h2 class="number" data-num="174">0</h2>
+                        <h4 class="sub-title">Happy Clients</h4>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number" data-num="892">0</h2>
+                        <h4 class="sub-title">Work Hour</h4>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number" data-num="368">0</h2>
+                        <h4 class="sub-title">Awards</h4>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- <section class="blog section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Last News">My blog</h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, deserunt?
+                    </p>
+                </div>
+
+                <div class="blog-wrapper">
+                    <div class="blog-wrap">
+                        <img src="./img/shapes/points3.png" alt="" class="points points-sq" />
+
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="./img/blog1.png" alt="" />
+                            </div>
+
+                            <div class="blog-content">
+                                <div class="blog-info">
+                                    <h5 class="blog-date">March, 19 2020</h5>
+                                    <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                                </div>
+                                <h3 class="title-sm">This is a short title</h3>
+                                <p class="blog-text">
+                                    Lorem ipsum, dolor sit amet elit. rem poimus? Tempora expedita eos autem! Lorem ipsum, dolor sit met.
+                                </p>
+                                <a href="#" class="btn small">ZZZZZ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-wrap">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="./img/blog2.png" alt="" />
+                            </div>
+
+                            <div class="blog-content">
+                                <div class="blog-info">
+                                    <h5 class="blog-date">August, 02 2020</h5>
+                                    <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                                </div>
+                                <h3 class="title-sm">This is a short title</h3>
+                                <p class="blog-text">
+                                    Lorem ipsum, dolor sit amet elit. Sint atque culpa repellat sunt sit amet nobis! Lorem ipsum dolor sit amet.
+                                </p>
+                                <a href="#" class="btn small">ZZZZZ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-wrap">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="./img/blog3.png" alt="" />
+                            </div>
+
+                            <div class="blog-content">
+                                <div class="blog-info">
+                                    <h5 class="blog-date">December, 12 2020</h5>
+                                    <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                                </div>
+                                <h3 class="title-sm">This is a short title</h3>
+                                <p class="blog-text">
+                                    Lorem ipsum dolor sit, amet elit. enim numquam, laborum earum? Lorem ipsum dolor sit amet.
+                                </p>
+                                <a href="#" class="btn small">ZZZZZ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="PS : Certains sont mes amis (¬‿¬ )">Avis</h3>
+                </div>
+
+                <div class="testi-content grid-2">
+                    <div class="column-1 reviews">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide review">
+                                    <i class="fas fa-quote-left quote"></i>
+                                    <p class="review-text">
+                                        Très réactif, et très créatif aussi, il produit un bon travail et libre dans les temps. </p>
+
+                                    <div class="review-info">
+                                        <h3 class="review-name">Franck Koutouan</h3>
+                                        <h5 class="review-job">UI-UX Design</h5>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide review">
+                                    <i class="fas fa-quote-left quote"></i>
+                                    <p class="review-text">
+                                        La collaboration avec lui était au top. Il est à la fois à l'écoute des besoins et fait des propositions pour les orienter. </p>
+
+                                    <div class="review-info">
+                                        <h3 class="review-name">Mel Cédric Datcha</h3>
+                                        <h5 class="review-job">Software Engineer | Backend Specialist </h5>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide review">
+                                    <i class="fas fa-quote-left quote"></i>
+
+                                    <p class="review-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatum enim nemo quod amet dolorum aliquam, sapiente omnis eaque consectetur.
+                                    </p>
+
+                                    <div class="review-info">
+                                        <h3 class="review-name">Touré Ahmad</h3>
+                                        <h5 class="review-job">Front-End</h5>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide review">
+                                    <i class="fas fa-quote-left quote"></i>
+
+                                    <p class="review-text">
+                                        Maîtrisant son domaine, ouvert d'esprit, cela a toujours été un plaisir de travailler sur des projets avec lui, je vous le recommande vivement pour vos prochains jeux.
+                                    </p>
+
+                                    <div class="review-info">
+                                        <h3 class="review-name">Luc AFFO</h3>
+                                        <h5 class="review-job">3D Generalist | Designer 3D et 2D</h5>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide review">
+                                    <i class="fas fa-quote-left quote"></i>
+
+                                    <p class="review-text">
+                                        Très bon, arrive à te pondre des résultats en un temps record </p>
+
+                                    <div class="review-info">
+                                        <h3 class="review-name">Gustave MIAN</h3>
+                                        <h5 class="review-job">Backend Software Engineer</h5>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide review">
+                                    <i class="fas fa-quote-left quote"></i>
+
+                                    <p class="review-text">
+                                        Comme beaucoup d'entre nous, on peut parfois donner l'impression de ne rien faire. Mais c'est souvent à ce moment-là que l'on travaille en arrière-plan sur des projets passionnants ! C'est aussi le cas de Issouf.
+                                    </p>
+                                    <div class="review-info">
+                                        <h3 class="review-name">Aboua Junior</h3>
+                                        <h5 class="review-job">Maintenancier Hardware/Software</h5>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide review">
+                                    <i class="fas fa-quote-left quote"></i>
+
+                                    <p class="review-text">
+                                        L'un des meilleurs développeurs que je connaisse personnellement. Il est super polyvalent et travaille super vite aussi </p>
+                                    <div class="review-info">
+                                        <h3 class="review-name">Juste Kouassi</h3>
+                                        <h5 class="review-job">Fullstack Software Engineer</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review-nav swiper-button-prev">
+                                <i class="fas fa-long-arrow-alt-left"></i>
+                            </div>
+                            <div class="review-nav swiper-button-next">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column-2 image">
+                        <img src="./img/testi.png" alt="" class="img-element" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div align="center">
+                        <h3 class="title">
+                            Un projet, une collab en tête ?
+                        </h3>
+                        <br>
+                        <p class="text">
+                            N’hésite pas à me contacter ;)
+                        </p>
+                        <br> <br>
+                        <a class="btn" href="mailto:kaboreissouf.wk@gmail.com">kaboreissouf.wk@gmail.com</a>
+                    </div>
+
+
+                    <div class="contact-form">
+                        <img src="./img/contact.png" class="img-element z-index" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hireme" id="hireme">
+            <div class="container">
+                <h3 class="title">
+                    heu... oui, c'est fini !
+                </h3>
+            </div>
+            <div class="container">
+                <h3 class="">
+                    (ง'̀-'́)ง
+                </h3>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="display: none;">
+        <div class="container">
+            <div class="grid-4">
+
+
+
+                <div class="grid-4-col footer-newstletter">
+                    <div class="footer-input-wrap">
+                        <input type="email" class="footer-input" placeholder="Email" />
+                        <a href="#" class="input-arrow">
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
