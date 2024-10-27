@@ -1070,6 +1070,10 @@ header .circle {
 
 /* Contact */
 
+.hidden {
+    display: none;
+}
+
 .contact {
     position: relative;
     width: 100%;
